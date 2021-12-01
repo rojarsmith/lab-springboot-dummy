@@ -1,0 +1,7 @@
+databaseChangeLog:
+- include:
+    file: db/changelog/20211201-ddl-init.xml
+    context: dev
+- include:
+    file: db/changelog/20211201-dml-init.sql
+    context: dev
