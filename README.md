@@ -9,9 +9,13 @@ The project template for building & test agile development.
 ### Manual
 
 ```bash
+## Remote side : ubuntu
+
+mkdir /root/service/app/lab-springboot-dummy
+
 ## Local side : Windows
 
-# Install Windows PowerShell from github, OpenJDK 11.x, Gradle 7.x.
+# Install Windows PowerShell from github, OpenJDK 11.x, Gradle 7.x, git.
 
 # Generate ssh key and deploy to github.
 
@@ -55,7 +59,33 @@ pm2 startOrRestart ecosystem.config.js
 pm2 ls
 ```
 
-## Test service:
+### Auto
+
+```bash
+# Modify ecosystem.config.js
+
+## Remote side : ubuntu
+
+# Install OpenJDK 11.x, Gradle 7.x, nvm, pm2, git.
+
+# Generate ssh key and deploy to github.
+
+mkdir /root/service/app/lab-springboot-dummy
+
+## Local side : Windows
+
+# Install Windows PowerShell from github, nvm-windows, pm2, git.
+
+# Generate ssh key and deploy to github.
+
+# Move to the path of source code.
+
+pm2 deploy ecosystem.config.js production setup
+
+pm2 deploy ecosystem.config.js production
+```
+
+## Test service
 
 ```bash
 # Result: hello TAG2
