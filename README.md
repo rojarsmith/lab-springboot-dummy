@@ -49,10 +49,11 @@ mv lab-springboot-dummy-0.0.1-SNAPSHOT.jar lab-springboot-dummy.jar
 
 vi ecosystem.config.js
 
-# Modify path
+# Modify path & config
 "args":[
   "-jar",
-  "/root/service/app/lab-springboot-dummy/lab-springboot-dummy.jar"]
+  "/root/service/app/lab-springboot-dummy/lab-springboot-dummy.jar",
+  "--spring.config.location=/server-root/application-prod.properties"]
 
 pm2 startOrRestart ecosystem.config.js
 

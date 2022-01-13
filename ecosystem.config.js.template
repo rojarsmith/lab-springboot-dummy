@@ -5,7 +5,8 @@ module.exports ={
          "script":"java",
          "args":[
             "-jar",
-            "/home/dev/test/lab-springboot-dummy/lab-springboot-dummy.jar"
+            "/home/dev/test/lab-springboot-dummy/lab-springboot-dummy.jar",
+            "--spring.config.location=/server-root/application-prod.properties"
          ],
          "exec_interpreter":"",
          "exec_mode":"fork"
